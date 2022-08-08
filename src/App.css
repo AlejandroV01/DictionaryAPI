@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #222222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #222222;
+    padding: 2rem;
+    max-width: 33rem;
+    min-height: 20rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchDiv{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.searchDiv input{
+    font-size: 1.3rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px rgb(129, 255, 129) solid;
+    border-radius: 2px;
+    padding-right: 5rem;
+    margin-right: 1rem;
+    width: 100%;
+    font-weight: 300;
+    color: #222222;
+}
+@media only screen and (max-width: 600px){
+    .searchDiv input{
+        padding-right: 0;
+        min-width: 10rem;
+    }
+    
+}
+.searchDiv button{
+    background-color: rgb(129, 255, 129);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5px 15px;
+    color: #222222;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wordAndSpeech{
+    display: flex;
+    justify-content: space-between;
+}
+
+.speaker{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.speaker-off{
+    display:none;
+}
+
+.partAndPho span{
+    margin-right: 1rem;
+    color: #7c7c7c;
+}
+
+.meaning{
+    margin-top: 1rem;
+    border-left: 3px rgb(129, 255, 129) solid;
+    padding-left: 0.3rem;
 }
