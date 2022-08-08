@@ -72,7 +72,7 @@ body{
 .speaker{
     width: 2rem;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .speaker-off{
