@@ -66,9 +66,7 @@ const speaker = document.querySelector('.speaker');
       <div className="wordBox">
         <div className="wordAndSpeech">
           <h1>{theWord.word}</h1>
-          <div onClick={() => playSound()}>
-          <img src={Speaker} alt="" className='speaker speaker-off' />
-          </div>
+          <img onClick={() => playSound()} src={Speaker} alt="" className='speaker speaker-off' />
         </div>
         <div className="partAndPho">
           <span>{theWord.partOfSpeech}</span>

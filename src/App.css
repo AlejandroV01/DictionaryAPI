@@ -63,13 +63,16 @@ body{
 
 .wordAndSpeech{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
+
+
 
 .speaker{
     width: 2rem;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .speaker-off{
