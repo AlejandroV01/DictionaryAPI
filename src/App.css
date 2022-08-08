@@ -64,6 +64,7 @@ body{
 .wordAndSpeech{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .speaker{
